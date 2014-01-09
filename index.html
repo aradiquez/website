@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="website">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aradiquez</title>
+	<link href="/favicon.ico" type="image/x-icon" rel="icon" />
+	<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />	
+
+</head>
+<body>
+	<div class="container-narrow">
+		<div class="masthead">
+    		<ul class="nav nav-pills pull-right" ng-controller='NavController'>
+				<li ng-repeat="link in sections"><a href="{{link.url}}" title="{{link.name}}">{{link.name}}</a></li>  
+			</ul>
+    		<h3 class="muted logo"></h3>
+  		</div>	    
+  		<hr/>
+		<div id="content">
+			<!-- Placeholder for the partials -->
+			<div ng-view>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<p>&copy;Aradiquez 2013</p>
+		</div>
+	</div><!-- container-narrow end  -->
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
