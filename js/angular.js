@@ -16,6 +16,7 @@
  * @description Converts the specified string to lowercase.
  * @param {string} string String to be converted to lowercase.
  * @returns {string} Lowercased string.
+ * nonsense commet 
  */
 var lowercase = function(string){return isString(string) ? string.toLowerCase() : string;};
 
